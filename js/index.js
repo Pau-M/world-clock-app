@@ -5,7 +5,9 @@ function updateRomeTime() {
   let romeMoment = moment().tz("Europe/Rome");
 
   romeDateElement.innerHTML = romeMoment.format("MMMM Do YYYY");
-  romeTimeElement.innerHTML = romeMoment.format("h:mm:ss [<small>]A[</small>]");
+  romeTimeElement.innerHTML = romeMoment.format(
+    "h:mm:ss [<small>] A[</small>]"
+  );
 }
 
 setInterval(updateRomeTime, 1000);
@@ -18,7 +20,7 @@ function updateHongKongTime() {
 
   hongkongDateElement.innerHTML = hongkongMoment.format("MMMM Do YYYY");
   hongkongTimeElement.innerHTML = hongkongMoment.format(
-    "h:mm:ss [<small>]A[</small>]"
+    "h:mm:ss [<small>] A[</small>]"
   );
 }
 
@@ -32,7 +34,7 @@ function updatePuertoRicoTime() {
 
   puertoricoDateElement.innerHTML = puertoricoMoment.format("MMMM Do YYYY");
   puertoricoTimeElement.innerHTML = puertoricoMoment.format(
-    "h:mm:ss [<small>]A[</small>]"
+    "h:mm:ss [<small>] A[</small>]"
   );
 }
 
