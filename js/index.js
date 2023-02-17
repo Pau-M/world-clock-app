@@ -46,15 +46,19 @@ function updatePuertoRicoTime() {
 
 setInterval(updatePuertoRicoTime, 1000);
 
-function updateCity(event) {
-  let cityTimeZone = event.target.value;
-  if (event.target.value === "current") {
-    cityTimeZone = moment.tz.guess();
-  }
-  let cityName = cityTimeZone.replace("_", " ").split("/")[1];
-  let cityTime = moment().tz(cityTimeZone);
-  let citiesElement = document.querySelector("#cityDisplay");
-  citiesElement.innerHTML = `
+let citiesSelectElement = document.querySelector("#cities");
+citiesSelectElement.addEventListener("change", function (event) {
+  const interval = setInterval(updateCity, 1000);
+
+  function updateCity() {
+    let cityTimeZone = event.target.value;
+    if (event.target.value === "current") {
+      cityTimeZone = moment.tz.guess();
+    }
+    let cityName = cityTimeZone.replace("_", " ").split("/")[1];
+    let cityTime = moment().tz(cityTimeZone);
+    let citiesElement = document.querySelector("#cityDisplay");
+    citiesElement.innerHTML = `
   <div class="row city rounded d-flex align-items-center mt-4 mb-2">
           <div class="col">
             <h2>${cityName}</h2>
@@ -71,7 +75,5 @@ function updateCity(event) {
           >All cities</a
         >
   `;
-}
-setInterval(updateCity, 1000);
-let citiesSelectElement = document.querySelector("#cities");
-citiesSelectElement.addEventListener("change", updateCity);
+  }
+});

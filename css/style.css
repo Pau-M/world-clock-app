@@ -30,6 +30,7 @@ select {
   font-size: 18px;
   border-radius: 4px;
   padding: 10px;
+  background-color: #cccecf;
   cursor: pointer;
 }
 
@@ -74,6 +75,7 @@ h2 {
 footer {
   color: #fff;
   text-align: center;
+  margin-bottom: 40px;
 }
 footer a {
   color: var(--primary-color);
@@ -81,4 +83,29 @@ footer a {
 }
 footer a:hover {
   text-decoration: underline;
+}
+@media (max-width: 576px) {
+  .container {
+    margin: 30px auto;
+    padding: 30px;
+  }
+  h2 {
+    font-size: 23px;
+  }
+  .time {
+    font-size: 32px;
+  }
+  .time small {
+    font-size: 16px;
+    line-height: 32px;
+    padding-top: 12px;
+    padding-left: 5px;
+  }
+  .date {
+    font-size: 14px;
+  }
+  footer {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
 }
