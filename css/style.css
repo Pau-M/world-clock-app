@@ -1,3 +1,7 @@
+:root {
+  --primary-color: #00bd95;
+}
+
 body {
   background-color: #151a1e;
   font-family: "Poppins", sans-serif;
@@ -12,16 +16,15 @@ body {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .clock {
-  color: #00bd95;
+  color: var(--primary-color);
   font-size: 40px;
 }
-h1 {
-  text-align: center;
-  color: #00bd95;
-}
+h1,
 label {
-  color: #00bd95;
+  text-align: center;
+  color: var(--primary-color);
 }
+
 select {
   width: 100%;
   font-size: 18px;
@@ -40,7 +43,7 @@ select {
 h2 {
   margin: 0 0 5px;
   font-size: 28px;
-  color: #00bd95;
+  color: var(--primary-color);
 }
 .time {
   font-size: 46px;
@@ -58,22 +61,22 @@ h2 {
   display: block;
   margin: 0 auto;
   width: 100px;
-  background-color: #00bd95;
+  background-color: var(--primary-color);
   color: #070b0d;
-  border: 1px solid #00bd95;
+  border: 1px solid var(--primary-color);
   transition: all 200ms ease-in-out;
 }
 .btn-primary:hover {
   background-color: #070b0d;
-  color: #00bd95;
-  border: 1px solid #00bd95;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
 }
 footer {
   color: #fff;
   text-align: center;
 }
 footer a {
-  color: #00bd95;
+  color: var(--primary-color);
   text-decoration: none;
 }
 footer a:hover {
