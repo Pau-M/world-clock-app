@@ -64,6 +64,12 @@ function updateCity(event) {
             "h:mm:ss"
           )} <small>${cityTime.format("A")}</small></div>
         </div>
+        <a
+          href="/"
+          class="btn btn-primary mt-4 "
+          title="Back to homepage"
+          >All cities</a
+        >
   `;
 }
 setInterval(updateCity, 1000);
