@@ -9,6 +9,7 @@ body {
   background-color: #070b0d;
   color: #fff;
   padding: 60px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .clock {
   color: #00bd95;
