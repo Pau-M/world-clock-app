@@ -37,6 +37,7 @@ select {
 .city {
   background-color: #151a1e;
   padding: 20px 0;
+  transition: all 200ms ease-in-out;
 }
 .city:hover {
   background-color: #151a1e57;

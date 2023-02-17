@@ -68,12 +68,13 @@ citiesSelectElement.addEventListener("change", function (event) {
             "h:mm:ss"
           )} <small>${cityTime.format("A")}</small></div>
         </div>
-        <a
+  `;
+  }
+  let backbutton = document.querySelector("#backbutton");
+  backbutton.innerHTML = `<a
           href="/"
           class="btn btn-primary mt-4 "
           title="Back to homepage"
-          >All cities</a
-        >
-  `;
-  }
+          >Back</a
+        >`;
 });
