@@ -35,16 +35,24 @@
       <i class="fa-regular fa-clock clock d-flex justify-content-center"></i>
       <h1 class="mb-5">World Clock</h1>
       <div class="d-flex justify-content-center">
-        <label for="cities">Choose the city to track:</label>
+        <label for="cities">Choose the city to time track:</label>
       </div>
       <div class="row">
         <select id="cities">
           <option value="">Select a city...</option>
           <option value="current">Current location</option>
           <option value="America/New_York">New York</option>
+          <option value="America/Caracas">Caracas</option>
+          <option value="America/Sao_Paulo">Sao Paulo</option>
           <option value="Europe/London">London</option>
           <option value="Europe/Warsaw">Warsaw</option>
+          <option value="Africa/Johannesburg">Johannesburg</option>
+          <option value="Asia/Baghdad">Baghdad</option>
+          <option value="Asia/Katmandu">Katmandu</option>
+          <option value="Asia/Jakarta">Jakarta</option>
           <option value="Asia/Tokyo">Tokyo</option>
+          <option value="Australia/Sydney">Sydney</option>
+          <option value="Pacific/Honolulu">Honolulu</option>
         </select>
       </div>
       <div id="cityDisplay">
@@ -59,11 +67,31 @@
           <div class="col time d-flex justify-content-end"></div>
         </div>
         <div
+          class="row city rounded d-flex align-items-center mb-2"
+          id="nairobi"
+        >
+          <div class="col">
+            <h2>Nairobi</h2>
+            <div class="date"></div>
+          </div>
+          <div class="col time d-flex justify-content-end"></div>
+        </div>
+        <div
           class="row city d-flex align-items-center rounded mb-2"
           id="hong-kong"
         >
           <div class="col">
             <h2>Hong Kong</h2>
+            <div class="date"></div>
+          </div>
+          <div class="col time d-flex justify-content-end"></div>
+        </div>
+        <div
+          class="row city d-flex align-items-center rounded mb-2"
+          id="los-angeles"
+        >
+          <div class="col">
+            <h2>Los Angeles</h2>
             <div class="date"></div>
           </div>
           <div class="col time d-flex justify-content-end"></div>

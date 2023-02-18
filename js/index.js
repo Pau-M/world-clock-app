@@ -14,6 +14,22 @@ function updateRomeTime() {
 
 setInterval(updateRomeTime, 1000);
 
+function updateNairobiTime() {
+  let nairobiElement = document.querySelector("#nairobi");
+  if (nairobiElement) {
+    let nairobiDateElement = nairobiElement.querySelector(".date");
+    let nairobiTimeElement = nairobiElement.querySelector(".time");
+    let nairobiMoment = moment().tz("Africa/Nairobi");
+
+    nairobiDateElement.innerHTML = nairobiMoment.format("MMMM Do YYYY");
+    nairobiTimeElement.innerHTML = nairobiMoment.format(
+      "h:mm:ss [<small>] A[</small>]"
+    );
+  }
+}
+
+setInterval(updateNairobiTime, 1000);
+
 function updateHongKongTime() {
   let hongkongElement = document.querySelector("#hong-kong");
   if (hongkongElement) {
@@ -29,6 +45,22 @@ function updateHongKongTime() {
 }
 
 setInterval(updateHongKongTime, 1000);
+
+function updateLosAngelestime() {
+  let losangelesElement = document.querySelector("#los-angeles");
+  if (losangelesElement) {
+    let losangelesDateElement = losangelesElement.querySelector(".date");
+    let losangelesTimeElement = losangelesElement.querySelector(".time");
+    let losangelesMoment = moment().tz("America/Los_Angeles");
+
+    losangelesDateElement.innerHTML = losangelesMoment.format("MMMM Do YYYY");
+    losangelesTimeElement.innerHTML = losangelesMoment.format(
+      "h:mm:ss [<small>] A[</small>]"
+    );
+  }
+}
+
+setInterval(updateLosAngelestime, 1000);
 
 function updatePuertoRicoTime() {
   let puertoricoElement = document.querySelector("#puerto-rico");
